@@ -24,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className={`${heebo.variable} ${kalam.variable}`}>
-      <body>{children}</body>
+      <body className="bg-surface-background text-text-primary antialiased">
+        {children}
+      </body>
     </html>
   )
 }
