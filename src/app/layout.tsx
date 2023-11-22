@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Heebo, Kalam } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/Header'
 
 const heebo = Heebo({
   subsets: ['latin'],
@@ -25,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="pt" className={`${heebo.variable} ${kalam.variable}`}>
       <body className="bg-surface-background text-text-primary antialiased">
-        {children}
+        <div className="min-h-screen">
+          <Header />
+
+          <main className="p-4">{children}</main>
+        </div>
       </body>
     </html>
   )
