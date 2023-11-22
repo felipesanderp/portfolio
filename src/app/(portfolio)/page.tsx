@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center gap-6 lg:mx-auto lg:max-w-7xl lg:flex-row lg:justify-between lg:gap-32">
+    <div className="flex flex-col items-center gap-6 md:mx-auto md:flex-row md:justify-between md:gap-32 lg:max-w-7xl">
       <Image
-        className="lg:hidden"
+        className="md:hidden"
         src="/bro.png"
         alt=""
         width={250}
@@ -15,7 +15,7 @@ export default function Home() {
       />
 
       <Image
-        className="hidden lg:order-last lg:flex"
+        className="hidden md:order-last md:flex"
         src="/bro-2.png"
         alt=""
         width={500}
