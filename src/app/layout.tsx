@@ -6,7 +6,7 @@ import { Header } from '@/components/Header'
 const heebo = Heebo({
   subsets: ['latin'],
   variable: '--font-heebo',
-  weight: ['400', '600'],
+  weight: ['400', '500'],
 })
 const kalam = Kalam({
   subsets: ['latin'],
@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="min-h-screen">
           <Header />
 
-          <main className="p-4">{children}</main>
+          <main className="p-6">{children}</main>
         </div>
       </body>
     </html>
