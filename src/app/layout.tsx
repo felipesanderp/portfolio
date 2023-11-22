@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Heebo, Kalam } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const heebo = Heebo({
+  subsets: ['latin'],
+  variable: '--font-heebo',
+  weight: ['400', '600'],
+})
+const kalam = Kalam({
+  subsets: ['latin'],
+  variable: '--font-kalam',
+  weight: ['400'],
+})
 
 export const metadata: Metadata = {
   title: 'Felipe Dev | Portfólio',
@@ -14,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt" className={`${heebo.variable} ${kalam.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }
