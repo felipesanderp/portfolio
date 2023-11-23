@@ -1,3 +1,4 @@
+import { ProjectCard } from '@/components/ProjectCard'
 import { BookText, MoveRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -126,6 +127,13 @@ export default function Home() {
             My Resume
           </Link>
         </div>
+      </div>
+      <div className="flex flex-col gap-8 md:grid md:grid-cols-3 md:items-center md:px-28 md:py-16">
+        <ProjectCard />
+
+        <ProjectCard />
+
+        <ProjectCard />
       </div>
     </div>
   )
