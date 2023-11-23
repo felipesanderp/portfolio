@@ -14,22 +14,32 @@ export default function Home() {
         quality={100}
       />
 
-      <Image
-        className="hidden md:order-last md:flex"
-        src="/bro-2.png"
-        alt=""
-        width={500}
-        height={500}
-        quality={100}
-      />
+      <div className="hidden md:order-last md:flex md:flex-col">
+        <Image
+          className="mb-6"
+          src="/bro-2.png"
+          alt=""
+          width={500}
+          height={500}
+          quality={100}
+        />
+        <Image
+          className="translate-x-4 rotate-[130deg]"
+          src="/graphic-03.svg"
+          alt=""
+          width={100}
+          height={100}
+          quality={100}
+        />
+      </div>
       <div className="flex flex-col gap-6 lg:max-w-xl">
-        <h2 className="font-kalam text-gradient from-primary-500 to-secondary bg-gradient-to-r bg-clip-text text-4xl/10 text-transparent">
+        <h2 className="text-gradient bg-gradient-to-r from-primary-500 to-secondary bg-clip-text font-kalam text-4xl/10 text-transparent">
           Hi, I&apos;m Felipe
         </h2>
         <p className="text-2xl/8 font-medium">
           Full-stack developer and innovation enthusiast
         </p>
-        <span className="text-text-secondary text-base">
+        <span className="text-base text-text-secondary">
           Over 4 years of experience in the tech industry. I specialize in
           building innovative web and mobile applications using technologies
           such as React, React Native, and Node.js.
@@ -38,7 +48,7 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <Link
             href="#"
-            className="bg-surface-secondary hover:bg-surface-secondary/80 flex h-14 items-center gap-2 rounded-lg p-6 lg:w-auto"
+            className="flex h-14 items-center gap-2 rounded-lg bg-surface-secondary p-6 hover:bg-surface-secondary/80 lg:w-auto"
           >
             <BookText />
             My Resume
@@ -46,7 +56,7 @@ export default function Home() {
 
           <Link
             href="#"
-            className="bg-primary-500 hover:bg-primary-500/80 flex h-14 items-center gap-2 rounded-lg p-6 lg:w-auto"
+            className="flex h-14 items-center gap-2 rounded-lg bg-primary-500 p-6 hover:bg-primary-500/80 lg:w-auto"
           >
             Get in touch
             <MoveRight />

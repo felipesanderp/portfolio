@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      rotate: {
+        '130': '130deg',
+      },
       fontFamily: {
         heebo: ['var(--font-heebo)'],
         kalam: ['var(--font-kalam)'],
