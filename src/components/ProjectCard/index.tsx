@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function ProjectCard() {
   return (
-    <div className="flex h-full w-full flex-col gap-4 rounded-2xl border border-surface-primary bg-surface-primary p-4 hover:cursor-pointer hover:border-secondary">
+    <div className="flex h-full w-full flex-col gap-4 rounded-2xl border border-surface-primary bg-surface-primary p-4 transition-colors hover:cursor-pointer hover:border-secondary">
       <Image
         className="rounded-tl-lg rounded-tr-lg"
         src="/projects/dev-links.png"
