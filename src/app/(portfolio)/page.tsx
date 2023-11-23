@@ -128,12 +128,20 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-8 md:grid md:grid-cols-3 md:items-center md:px-28 md:py-16">
-        <ProjectCard />
+      <div className="flex flex-col items-center gap-8 md:px-28 md:py-16">
+        <div className="flex flex-col items-center gap-2">
+          <h3 className="font-kalam text-base/4 text-secondary">Projects</h3>
+          <h2 className="text-2xl/8 font-medium">
+            Take a look at my highlighted projects
+          </h2>
+        </div>
+        <div className="md:grid md:grid-cols-3 md:items-center md:gap-8">
+          <ProjectCard />
 
-        <ProjectCard />
+          <ProjectCard />
 
-        <ProjectCard />
+          <ProjectCard />
+        </div>
       </div>
     </div>
   )
