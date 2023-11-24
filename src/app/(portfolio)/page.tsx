@@ -1,7 +1,10 @@
 import { ProjectCard } from '@/components/ProjectCard'
-import { BookText, MoveRight } from 'lucide-react'
+import { BookText, Github, Instagram, Linkedin, MoveRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import * as Input from '@/components/input'
+import { Textarea } from '@/components/textarea'
 
 export default function Home() {
   return (
@@ -149,6 +152,49 @@ export default function Home() {
           See all
           <MoveRight />
         </Link>
+      </div>
+      <div className="flex w-full flex-col gap-6 rounded-2xl bg-surface-primary px-6 py-12 md:grid md:grid-cols-2 md:p-20">
+        <div className="flex flex-col gap-6">
+          <Image
+            src="/cute-avatar.svg"
+            alt=""
+            width={160}
+            height={160}
+            quality={100}
+          />
+          <span className="font-kalam text-base/4 text-secondary">Contact</span>
+          <h2 className="text-2xl font-medium text-text-primary">
+            Enjoy my work? Let&apos;s work together
+          </h2>
+          <p className="text-base/6 text-text-secondary">
+            I&apos;m always up for a chat.Pop me an email at{' '}
+            <span className="text-secondary underline">
+              felipesanderp@hotmail.com
+            </span>{' '}
+            or give me a shout on social media
+          </p>
+          <div className="flex gap-2">
+            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+              <Github />
+            </button>
+            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+              <Linkedin />
+            </button>
+            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+              <Instagram />
+            </button>
+          </div>
+        </div>
+
+        <form className="flex flex-col gap-4">
+          <Input.Root>
+            <Input.Control type="text" id="name" placeholder="Name" />
+          </Input.Root>
+          <Input.Root>
+            <Input.Control type="email" id="email" placeholder="E-mail" />
+          </Input.Root>
+          <Textarea placeholder="Your Message" />
+        </form>
       </div>
     </div>
   )
