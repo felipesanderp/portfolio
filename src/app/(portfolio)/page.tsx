@@ -153,7 +153,7 @@ export default function Home() {
           <MoveRight />
         </Link>
       </div>
-      <div className="flex w-full flex-col gap-6 rounded-2xl bg-surface-primary px-6 py-12 md:grid md:grid-cols-2 md:p-20">
+      <div className="flex w-full flex-col gap-6 rounded-2xl bg-surface-primary px-6 py-12 md:grid md:grid-cols-2 md:gap-12 md:p-[72px]">
         <div className="flex flex-col gap-6">
           <Image
             src="/cute-avatar.svg"
@@ -194,6 +194,11 @@ export default function Home() {
             <Input.Control type="email" id="email" placeholder="E-mail" />
           </Input.Root>
           <Textarea placeholder="Your Message" />
+
+          <button className="mt-2 flex h-14 w-fit items-center gap-2 rounded-lg bg-primary-500 p-6 hover:bg-primary-500/80">
+            Send me a message
+            <MoveRight />
+          </button>
         </form>
       </div>
     </div>
