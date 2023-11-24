@@ -142,6 +142,13 @@ export default function Home() {
 
           <ProjectCard />
         </div>
+        <Link
+          href="#"
+          className="flex h-14 items-center gap-2 rounded-lg bg-surface-secondary p-6 hover:bg-surface-secondary/80 lg:w-auto"
+        >
+          See all
+          <MoveRight />
+        </Link>
       </div>
     </div>
   )
