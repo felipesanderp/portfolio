@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Heebo, Kalam } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/footer'
 
 const heebo = Heebo({
   subsets: ['latin'],
@@ -30,6 +31,8 @@ export default function RootLayout({
           <Header />
 
           <main className="p-6">{children}</main>
+
+          <Footer />
         </div>
       </body>
     </html>

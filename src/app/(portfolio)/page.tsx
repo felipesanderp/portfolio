@@ -8,8 +8,8 @@ import { Textarea } from '@/components/textarea'
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 md:mx-auto md:gap-16 lg:max-w-7xl">
-      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-32 ">
+    <div className="flex flex-col gap-8 md:mx-auto md:gap-16 lg:max-w-[1440px]">
+      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-32 md:px-28">
         <Image
           className="md:hidden"
           src="/bro.png"
@@ -131,14 +131,14 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-8 md:px-28 md:py-16">
+      <div className="flex flex-col items-center gap-8 md:px-28 md:py-[72px]">
         <div className="flex flex-col items-center gap-2">
           <h3 className="font-kalam text-base/4 text-secondary">Projects</h3>
           <h2 className="text-2xl/8 font-medium">
             Take a look at my highlighted projects
           </h2>
         </div>
-        <div className="md:grid md:grid-cols-3 md:items-center md:gap-8">
+        <div className="flex flex-col gap-6 md:grid md:grid-cols-3 md:items-center md:gap-8">
           <ProjectCard />
 
           <ProjectCard />
@@ -153,7 +153,7 @@ export default function Home() {
           <MoveRight />
         </Link>
       </div>
-      <div className="flex w-full flex-col gap-6 rounded-2xl bg-surface-primary px-6 py-12 md:grid md:grid-cols-2 md:gap-12 md:p-[72px]">
+      <div className="flex w-full flex-col gap-6 rounded-2xl bg-surface-primary px-6 py-12 md:grid md:grid-cols-2 md:gap-[136px] md:p-[72px]">
         <div className="flex flex-col gap-6">
           <Image
             src="/cute-avatar.svg"
