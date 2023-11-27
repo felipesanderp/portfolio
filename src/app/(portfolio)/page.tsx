@@ -174,15 +174,30 @@ export default function Home() {
             or give me a shout on social media
           </p>
           <div className="flex gap-2">
-            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+            <a
+              href="https://github.com/felipesanderp"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary hover:bg-surface-secondary/80"
+              rel="noreferrer"
+            >
               <Github />
-            </button>
-            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+            </a>
+            <a
+              href="https://github.com/felipesanderp"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary hover:bg-surface-secondary/80"
+              rel="noreferrer"
+            >
               <Linkedin />
-            </button>
-            <button className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary">
+            </a>
+            <a
+              href="https://github.com/felipesanderp"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-secondary hover:bg-surface-secondary/80"
+              rel="noreferrer"
+            >
               <Instagram />
-            </button>
+            </a>
           </div>
         </div>
 
