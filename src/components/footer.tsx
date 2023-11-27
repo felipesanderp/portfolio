@@ -8,9 +8,30 @@ export function Footer() {
           FelipeDev 2023. Layout based on Rocketseats template.
         </p>
         <div className="flex items-center justify-center gap-6 text-base/6 text-text-secondary">
-          <span>GitHub</span>
-          <span>LinkedIn</span>
-          <span>Instagram</span>
+          <a
+            href="https://github.com/felipesanderp"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://github.com/felipesanderp"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/felipesanderp"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            Instagram
+          </a>
           <button>
             <MoveUp />
           </button>
