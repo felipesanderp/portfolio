@@ -1,6 +1,15 @@
+'use client'
+
 import { MoveUp } from 'lucide-react'
 
 export function Footer() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className="flex h-28 items-center justify-center px-[112px] py-8">
       <div className="flex flex-col justify-between gap-4 md:w-full md:max-w-7xl md:flex-row">
@@ -32,7 +41,10 @@ export function Footer() {
           >
             Instagram
           </a>
-          <button>
+          <button
+            className="flex h-12 w-12 items-center justify-center rounded-lg bg-surface-background transition-colors hover:bg-surface-primary/80"
+            onClick={scrollToTop}
+          >
             <MoveUp />
           </button>
         </div>
